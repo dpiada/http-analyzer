@@ -1,0 +1,19 @@
+L'applicazione si compone su tre livelli che sono:
+
+- frontend-tier
+  Il frontend è stato sviluppato con Vue.js e per alcune componenti è stato utilizzato il framework bootstrap-vue.
+  Per eseguire le chiamate al backend ho utilizzato axios.
+  Per gestire il routing tra le chiamate ho usato vue-route.
+  Attualmente esegue in localhost alla macchina su cui viene eseguito
+ 
+- backend-tier
+  backend è stato sviluppato in Nodejs utilizzando il framework Express.js 
+  Per eseguire le chiamate http ho utilizzato request associato a request-promise, la scelta di questi moduli è stata fatta
+  per via della semplicità di utilizzo nonostante siano stati classificati come deprecati da febbraio di quest'anno (2020).
+  Per il collegamento al database e per la creazione dello schema ho utilizzato i modulo Nodejs mongoose.
+  Attualmente esegue in localhost alla macchina su cui viene eseguito
+  
+- database-tier 
+  Il database utilizzato si trova su AtlasMongoDB nella versione free dei cluster.
+  La scelta di del database sul cloud è dovuta alla volontà di rendere più esportabile l'utilizzo dell'applicazione senza dover installare MongoDB.
+ 
